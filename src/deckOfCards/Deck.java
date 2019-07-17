@@ -15,7 +15,7 @@ public class Deck {
 
 	// create Deck of cards
 	public void createDeck() {
-		ArrayList<Card> cards = new ArrayList<Card>(52);
+		cards = new ArrayList<Card>(52);
 		int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 		String[] suits = { "Spade", "Heart", "Club", "Diamond" };
 		for (int i = 0; i < suits.length; i++) {
@@ -89,8 +89,9 @@ public class Deck {
 	}
 	
 	public void printDeck() {
+		System.out.println("Deck : " + cards.size());
 		for(int i=0; i<cards.size(); i++) {
-			cards.get(i).toString();
+			System.out.println(cards.get(i).toString());
 		}
 	}
 

@@ -3,10 +3,11 @@ package deckOfCards;
 public class Main {
 public static void main(String args[]) {
 	Deck deck = new Deck();
-	
+	System.out.print("Start\n");	
 	deck.createDeck();	
 	deck.printDeck();
 	deck.shuffle();
-	deck.deal(1);
+	deck.printDeck();
+//	deck.deal(1);
 }
 }
